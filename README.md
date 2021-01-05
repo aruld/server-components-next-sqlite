@@ -24,9 +24,9 @@ OAUTH_CLIENT_SECRET='github oauth app secret'
 
 Go to `localhost:3000` to view the application.
 
-### Deploy
+<!-- ### Deploy
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Faruld%2Fserver-components-next-sqlite&env=ENDPOINT,NEXT_PUBLIC_ENDPOINT,SESSION_KEY,OAUTH_CLIENT_KEY,OAUTH_CLIENT_SECRET&project-name=server-components-next-sqlite&repo-name=server-components-next-sqlite&demo-title=React%20Server%20Components%20(Experimental%20Demo)&demo-description=Experimental%20demo%20of%20React%20Server%20Components%20with%20Next.js.%20&demo-url=https%3A%2F%2Fserver-components-next-sqlite.vercel.app&demo-image=https%3A%2F%2Fserver-components-next-sqlite.vercel.app%2Fog.png)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Faruld%2Fserver-components-next-sqlite&env=ENDPOINT,NEXT_PUBLIC_ENDPOINT,SESSION_KEY,OAUTH_CLIENT_KEY,OAUTH_CLIENT_SECRET&project-name=server-components-next-sqlite&repo-name=server-components-next-sqlite&demo-title=React%20Server%20Components%20(Experimental%20Demo)&demo-description=Experimental%20demo%20of%20React%20Server%20Components%20with%20Next.js.%20&demo-url=https%3A%2F%2Fserver-components-next-sqlite.vercel.app&demo-image=https%3A%2F%2Fserver-components-next-sqlite.vercel.app%2Fog.png) -->
 
 ## Caveats
 
