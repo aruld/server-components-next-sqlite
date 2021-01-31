@@ -7,12 +7,13 @@ export default async (req, res) => {
   const id = +req.query.id
   const login = req.session.login
 
-  // console.time('get item from sqlite')
-  const result = JSON.stringify(await prisma.note.findUnique({
-    where: {id: Number(id)}
-  }))
+  const result = JSON.stringify(
+    await prisma.note.findUnique({
+      where: { id: Number(id) },
+    })
+  )
+  console.log(result)
   const note = JSON.parse(result || 'null')
-  // console.timeEnd('get item from sqlite')
 
   if (req.method === 'GET') {
     return res.send(JSON.stringify(note))
@@ -23,11 +24,9 @@ export default async (req, res) => {
       return res.status(403).send('Unauthorized')
     }
 
-    // console.time('delete item from sqlite')
     await prisma.note.delete({
-      where: {id: Number(id)}
+      where: { id: Number(id) },
     })
-    // console.timeEnd('delete item from sqlite')
 
     return sendRes(req, res, null)
   }
@@ -37,17 +36,15 @@ export default async (req, res) => {
       return res.status(403).send('Unauthorized')
     }
 
-    // console.time('update item from sqlite')
     await prisma.note.update({
-      where: {if: Number(id)},
+      where: { id: Number(id) },
       data: {
         title: (req.body.title || '').slice(0, 255),
-        updated_at: Date.now(),
+        updated_at: new Date().toISOString(),
         body: (req.body.body || '').slice(0, 2048),
         created_by: login,
-      }
+      },
     })
-    // console.timeEnd('update item from sqlite')
 
     return sendRes(req, res, null)
   }

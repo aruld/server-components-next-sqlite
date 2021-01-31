@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "postinstall": "node scripts/build",
-    "dev": "next",
+    "dev": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
     "format": "prettier --write ."
@@ -15,24 +15,24 @@
     "@babel/plugin-transform-modules-commonjs": "^7.12.1",
     "@babel/preset-react": "^7.12.10",
     "@babel/register": "^7.12.10",
-    "@prisma/client": "2.13.1",
+    "@prisma/client": "2.15.0",
     "babel-loader": "^8.2.2",
     "date-fns": "^2.16.1",
     "excerpts": "^0.0.3",
     "marked": "^1.2.7",
     "micro-cookie-session": "^2.0.0-beta.1",
-    "next": "^10.0.4",
+    "next": "^10.0.6",
     "oauth": "^0.9.15",
-    "react": "0.0.0-experimental-3310209d0",
-    "react-dom": "0.0.0-experimental-3310209d0",
+    "react": "0.0.0-experimental-27659559e",
+    "react-dom": "0.0.0-experimental-27659559e",
     "react-error-boundary": "^3.1.0",
-    "react-fetch": "0.0.0-experimental-3310209d0",
-    "react-server-dom-webpack": "0.0.0-experimental-3310209d0",
+    "react-fetch": "0.0.0-experimental-27659559e",
+    "react-server-dom-webpack": "0.0.0-experimental-27659559e",
     "sanitize-html": "^2.3.0",
     "webpack": "4.44.1"
   },
   "devDependencies": {
-    "@prisma/cli": "2.13.1",
+    "@prisma/cli": "2.15.0",
     "prettier": "2.2.1"
   },
   "prettier": {

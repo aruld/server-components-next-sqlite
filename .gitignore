@@ -10,3 +10,4 @@ yarn-error.log
 
 libs/react-client-manifest.json
 libs/send-res.build.js
+*.code-workspace
